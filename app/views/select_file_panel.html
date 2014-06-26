@@ -5,14 +5,14 @@
             <select class='form-control' ng-options=''></select>
         </div>
         <div class='input-group input-group-separate'>
-            <div class='progress'>
-                <div class='progress-bar form-control' style='width: 60%;'>
-                    <span>60%</span>
+            <div class='progress progress-striped active'>
+                <div class='progress-bar progress-bar-info' ng-style="{width: uploadProgress + '%'}">
+                    <span>{{uploadProgress}}%</span>
                 </div>
             </div>
-                <span class='input-group-btn'>
-                    <button class='btn btn-success btn-sm'>Upload</button>
-                </span>
+            <span class='input-group-btn'>
+                <button class='btn btn-success'>Upload</button>
+            </span>
         </div>
     </div>
 </div>

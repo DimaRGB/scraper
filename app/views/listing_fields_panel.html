@@ -1,3 +1,19 @@
 <div class='panel panel-default'>
     <div class='panel-heading'>Listing fields</div>
+    <div class='panel-body'>
+        <form name='listingFields' ng-submit='addField()'>
+            <ul class='list-group' ng-if='fields.length'>
+                <li class='list-group-item' ng-repeat='field in fields'>
+                    {{field}}
+                    <button type='button' class='close' ng-click='deleteField($index)'>&times;</button>
+                </li>
+            </ul>
+            <div class='input-group'>
+                <input type='text' class='form-control' ng-model='newField' />
+                <span class='input-group-btn'>
+                    <input type='submit' class='btn btn-success' value='Add field' />
+                </span>
+            </div>
+        </form>
+    </div>
 </div>

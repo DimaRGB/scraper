@@ -12,7 +12,7 @@ angular.module('scraperApp')
       templateUrl: 'views/select_file_panel.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-
+        scope.uploadProgress = 70;
       }
     };
   });
