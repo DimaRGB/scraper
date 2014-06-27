@@ -9,4 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('scraperApp', []);
+  .module('scraperApp', [
+    'LocalStorageModule',
+    'angularFileUpload'
+  ]);

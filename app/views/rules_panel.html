@@ -1,6 +1,15 @@
 <div class='panel panel-default'>
-    <div class='panel-heading'>Rules applied</div>
-    <div class='panel-body'>
-
-    </div>
+    <div class='panel-heading text-center'>Rules applied</div>
+    <table class='table'>
+        <tr>
+            <th>Field</th>
+            <th>Header</th>
+            <th>Footer</th>
+        </tr>
+        <tr ng-repeat='field in fields'>
+            <td>{{field.text}}</td>
+            <td><input type='text' ng-model='field.header' /></td>
+            <td><input type='text' ng-model='field.footer' /></td>
+        </tr>
+    </table>
 </div>

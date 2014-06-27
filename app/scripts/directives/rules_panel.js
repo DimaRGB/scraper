@@ -11,7 +11,7 @@ angular.module('scraperApp')
     return {
       templateUrl: 'views/rules_panel.html',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
+      link: function postLink(scope) {
 
       }
     };

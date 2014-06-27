@@ -11,8 +11,9 @@ angular.module('scraperApp')
     return {
       templateUrl: 'views/status_panel.html',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-
+      link: function postLink(scope) {
+          scope.totalLines = 10000;
+          scope.scrapedLines = 2300;
       }
     };
   });

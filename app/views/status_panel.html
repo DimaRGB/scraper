@@ -1,6 +1,21 @@
 <div class='panel panel-default'>
-    <div class='panel-heading'>Status</div>
+    <div class='panel-heading text-center'>Status</div>
     <div class='panel-body'>
-
+        <div class='row'>
+            <div class='col-lg-7'>
+                <p>Total lines</p>
+                <p>Scraped</p>
+                <p>Left</p>
+            </div>
+            <div class='col-lg-5'>
+                <p class='text-primary'>{{totalLines}}</p>
+                <p class='text-success'>{{scrapedLines}}</p>
+                <p class='text-danger'>{{totalLines - scrapedLines}}</p>
+            </div>
+        </div>
+        <div class='clearfix'>
+            <button class='btn btn-success pull-left'>EXPORT</button>
+            <button class='btn btn-warning pull-right'>Show what is left</button>
+        </div>
     </div>
 </div>

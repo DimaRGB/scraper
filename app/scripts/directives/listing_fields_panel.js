@@ -11,10 +11,11 @@ angular.module('scraperApp')
         return {
             templateUrl: 'views/listing_fields_panel.html',
             restrict: 'E',
-            link: function postLink(scope, element, attrs) {
+            link: function postLink(scope) {
+                scope.newField = {};
                 scope.addField = function () {
                     scope.fields.push(scope.newField);
-                    scope.newField = '';
+                    scope.newField = {};
                 };
                 scope.deleteField = function (index) {
                     scope.fields.splice(index, 1);
