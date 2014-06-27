@@ -1,15 +1,15 @@
 <div class='panel panel-default'>
     <div class='panel-heading text-center'>Rules applied</div>
-    <table class='table'>
+    <table class='table table-condensed'>
         <tr>
-            <th>Field</th>
-            <th>Header</th>
-            <th>Footer</th>
+            <th class='text-center'>Field</th>
+            <th class='text-center'>Header</th>
+            <th class='text-center'>Footer</th>
         </tr>
         <tr ng-repeat='field in fields'>
             <td>{{field.text}}</td>
-            <td><input type='text' ng-model='field.header' /></td>
-            <td><input type='text' ng-model='field.footer' /></td>
+            <td><input type='text' class='form-control input-sm' ng-model='field.header' placeholder='Regular expression' /></td>
+            <td><input type='text' class='form-control input-sm' ng-model='field.footer' placeholder='Regular expression' /></td>
         </tr>
     </table>
 </div>

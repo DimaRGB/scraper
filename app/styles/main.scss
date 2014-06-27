@@ -34,8 +34,14 @@ body {
       border-radius: 3px;
     }
   }
-  .btn-scrape {
-    width: 100%;
+  rules-panel {
+    .table {
+      table-layout: fixed;
+      td {
+        vertical-align: middle;
+        word-wrap: break-word;
+      }
+    }
   }
 }
 
