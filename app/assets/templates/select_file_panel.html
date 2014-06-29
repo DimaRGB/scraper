@@ -1,0 +1,20 @@
+<div class='panel panel-default'>
+    <div class='panel-heading text-center'>Select file</div>
+    <div class='panel-body'>
+        <div class='form-group'>
+            <select class='form-control input-sm' ng-options=''></select>
+        </div>
+        <div class='input-group input-group-separate'>
+            <div class='progress progress-striped active'>
+                <div class='progress-bar progress-bar-info' ng-style="{ width: uploadProgress + '%' }">
+                    <span ng-if='uploadProgress'>{{uploadProgress}}%</span>
+                </div>
+            </div>
+            <span class='input-group-btn'>
+                <label class='btn btn-success btn-sm'>Upload
+                    <input type='file' class='hidden' ng-file-select='onFileSelect($files)' />
+                </label>
+            </span>
+        </div>
+    </div>
+</div>
