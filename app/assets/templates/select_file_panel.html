@@ -2,7 +2,7 @@
     <div class='panel-heading text-center'>Select file</div>
     <div class='panel-body'>
         <div class='form-group'>
-            <select class='form-control input-sm' ng-options=''></select>
+            <select class='form-control input-sm' ng-model='csvSelected' ng-options='csv.file_name for csv in csvs'></select>
         </div>
         <div class='input-group input-group-separate'>
             <div class='progress progress-striped active'>

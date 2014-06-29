@@ -1,6 +1,7 @@
 #= require jquery
 #= require bootstrap
 #= require angular
+#= require angular-resource
 #= require spin.js/spin.js
 #= require angular-spinner
 #= require ng-file-upload
@@ -8,6 +9,7 @@
 #= require_tree .
 
 angular.module 'scraperApp', [
+  'ngResource'
   'angularFileUpload'
 ]
 
@@ -16,6 +18,6 @@ angular.module 'scraperApp', [
   $httpProvider.interceptors.push ->
     request: (config) ->
       if !~config.url.indexOf '.html'
-        config.url = "/api#{config.url}"
+        config.url = "/api/#{config.url}"
       config
 ]
