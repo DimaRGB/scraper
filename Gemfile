@@ -13,5 +13,4 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'heroku'
 end
