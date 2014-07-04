@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('scraperApp')
-  .directive('preassetsPanel', function () {
+  .directive('previewsPanel', function () {
     return {
-      templateUrl: 'assets/preassets_panel.html',
+      templateUrl: 'assets/previews_panel.html',
       restrict: 'E',
       link: function postLink(scope) {
 
