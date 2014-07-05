@@ -13,7 +13,6 @@ Bundler.require(*Rails.groups)
 
 module Scraper
   class Application < Rails::Application
-    config.assets.initialize_on_precompile = false
     config.assets.precompile.shift
     config.assets.precompile.push(Proc.new do |path|
       File.extname(path).in? [
