@@ -5,12 +5,11 @@ gem 'pg'
 gem 'carrierwave'
 
 group :assets do
-  gem 'sass-rails', '~> 4.0.3'
+  gem 'sass-rails'
   gem 'bootstrap-sass'
   gem 'coffee-rails'
-  gem 'uglifier', '>= 1.3.0'
+  gem 'uglifier'
 end
 
-group :production do
-  gem 'rails_12factor'
-end
+gem 'spring', group: :development
+gem 'rails_12factor', group: :production

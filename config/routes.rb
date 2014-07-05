@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  namespace :api do #, path: '/', constraints: { subdomain: 'api' } do
+  namespace :api do
     resources :csvs
   end
 

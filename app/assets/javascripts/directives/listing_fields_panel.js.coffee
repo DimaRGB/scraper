@@ -8,9 +8,8 @@ angular.module 'scraperApp'
     scope.addField = ->
       return unless scope.newField.text
       return if scope.fields.filter((field) -> field.text == scope.newField.text).length
-      scope.fields.push(scope.newField);
-      scope.newField = {};
-    };
-    scope.deleteField = function (index) {
-      scope.fields.splice(index, 1);
+      scope.fields.push scope.newField
+      scope.newField = {}
+    scope.deleteField = (index) ->
+      scope.fields.splice index, 1
 ]

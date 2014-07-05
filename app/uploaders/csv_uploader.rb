@@ -1,6 +1,4 @@
-# encoding: utf-8
-
-class FileUploader < CarrierWave::Uploader::Base
+class CsvUploader < CarrierWave::Uploader::Base
 
   storage :file if !Rails.env.production?
 

@@ -1,22 +1,22 @@
 {
-  "name": "scraper",
-  "version": "0.0.0",
-  "authors": [
-      "dima.rgb <dima.rgb@gmail.com>"
-  ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jquery": "~1.11.1",
-    "angular": "1.2.16",
-    "angular-resource": "1.2.16",
-    "spin.js": "",
-    "angular-spinner": "",
-    "ng-file-upload": ""
-  }
+    "name": "scraper",
+    "version": "0.0.0",
+    "authors": [
+        "dima.rgb <dima.rgb@gmail.com>"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~1.11.1",
+        "angular": "1.2.16",
+        "angular-resource": "1.2.16",
+        "spin.js": "",
+        "angular-spinner": "",
+        "ng-file-upload": ""
+    }
 }

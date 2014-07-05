@@ -1,21 +1,20 @@
 <div class='panel panel-default'>
-    <div class='panel-heading text-center'>Status</div>
+    <div class='panel-heading text-center'>Select file</div>
     <div class='panel-body'>
-        <div class='row'>
-            <div class='col-xs-7'>
-                <p><samp>Total lines</samp></p>
-                <p><samp>Scraped</samp></p>
-                <p><samp>Left</samp></p>
-            </div>
-            <div class='col-xs-5'>
-                <p><samp class='text-primary'>{{totalLines || 0}}</samp></p>
-                <p><samp class='text-success'>{{scrapedLines || 0}}</samp></p>
-                <p><samp class='text-danger'>{{totalLines - scrapedLines}}</samp></p>
-            </div>
+        <div class='form-group'>
+            <select class='form-control input-sm' ng-model='csvSelected' ng-options='csv.file_name for csv in csvs'></select>
         </div>
-        <div class='clearfix'>
-            <button class='btn btn-success btn-sm pull-left'>EXPORT</button>
-            <button class='btn btn-warning btn-sm pull-right'>Show what is left</button>
+        <div class='input-group input-group-separate'>
+            <div class='progress progress-striped active'>
+                <div class='progress-bar progress-bar-info' ng-style="{ width: uploadProgress + '%' }">
+                    <span ng-if='uploadProgress'>{{uploadProgress}}%</span>
+                </div>
+            </div>
+            <span class='input-group-btn'>
+                <label class='btn btn-success btn-sm'>Upload
+                    <input type='file' class='hidden' ng-file-select='onFileSelect($files)' />
+                </label>
+            </span>
         </div>
     </div>
 </div>

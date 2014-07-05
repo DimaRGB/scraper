@@ -9,7 +9,7 @@ class Api::CsvsController < ApplicationController
     render status: :ok, json: csv.to_json
   end
 
-protected
+  protected
 
   def create_params
     params.permit :file

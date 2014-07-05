@@ -1,17 +1,7 @@
-'use strict';
+angular.module 'scraperApp'
 
-/**
- * @ngdoc directive
- * @name scraperApp.directive:statusPanel
- * @description
- * # statusPanel
- */
-angular.module('scraperApp')
-  .directive('statusPanel', function () {
-    return {
-      templateUrl: 'assets/status_panel.html',
-      restrict: 'E',
-      link: function postLink(scope) {
-      }
-    };
-  });
+.directive 'statusPanel', [->
+  templateUrl: 'assets/status_panel.html'
+  restrict: 'E'
+  link: ->
+]
