@@ -1,11 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc directive
- * @name scraperApp.directive:selectFilePanel
- * @description
- * # selectFilePanel
- */
 angular.module('scraperApp')
   .directive('selectFilePanel', ['$upload', 'Csv', function ($upload, Csv) {
     return {
